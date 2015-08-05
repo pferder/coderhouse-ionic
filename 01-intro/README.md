@@ -6,6 +6,9 @@
 	- Instalar ionic [Link](http://ionicframework.com/getting-started/) "npm install -g cordova ionic"
 	- Instalar [Android Tools](http://developer.android.com/sdk/installing/index.html?pkg=tools)
 	- Listado de dominios
+		- https://registry.npmjs.org/
+		- https://github.com/
+		- https://cordova.apache.org/
 
 - Links
 	- [Phonegap](http://phonegap.com/)
