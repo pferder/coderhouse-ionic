@@ -1,0 +1,34 @@
+
+
+<ion-tabs class="tabs-icon-top tabs-positive">
+
+  <ion-tab title="Home" 
+  		   icon-on="ion-ios-filing" 
+  		   icon-off="ion-ios-filing-outline"
+  		   href="#/tabs/home">
+        <ion-nav-bar class="bar-positive"></ion-nav-bar>
+
+        <ion-nav-view name="home-view"></ion-nav-view>
+  </ion-tab>
+
+  <ion-tab title="List" 
+  		   icon-on="ion-android-search" 
+  		   icon-off="ion-android-search"
+           href="#/tabs/list">
+
+        <ion-nav-bar class="bar-positive">
+             <ion-nav-back-button></ion-nav-back-button>
+        </ion-nav-bar>
+        
+        <ion-nav-view name="list-view"></ion-nav-view>
+  </ion-tab>
+
+  <ion-tab title="Settings" 
+           icon-on="ion-ios-gear" 
+           icon-off="ion-ios-gear-outline"
+           href="#/tabs/settings">
+        <ion-nav-bar class="bar-positive"></ion-nav-bar>
+        <ion-nav-view name="settings-view"></ion-nav-view>
+  </ion-tab>
+
+</ion-tabs>
