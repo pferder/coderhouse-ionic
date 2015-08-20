@@ -1,5 +1,27 @@
 <ion-view view-title="Home">
-	<ion-content>
-		<h1>Home</h1>
+	<ion-content class="padding">
+		<h1>Buscador</h1>
+		<div class="list list-inset">
+		  <label class="item item-input">
+			    <i class="icon ion-search placeholder-icon"></i>
+			    
+			    <input type="text" 
+			    	   placeholder="Search"
+			    	   ng-model="data.query" >
+			</label>
+
+			<button class="button button-block button-positive"
+					ng-click="comenzarBusqueda()">
+
+			  Buscar
+			</button>
+		</div>
+
+		{{query}}
+
+		<!-- <h1 class="{{saludo}}">Home</h1>
+		<h2>{{saludo}}</h2>
+		<button ng-click="testButton()">Test</button>
+		{{saludo}} -->
 	</ion-content>
 </ion-view>

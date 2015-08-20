@@ -23,7 +23,7 @@ var modulo = angular.module('starter', ['ionic'])
 // $urlRouterProvider.otherwise('/otherwise');
 
 angular.module('starter').config(function($stateProvider,
-    $urlRouterProvider) {
+                                          $urlRouterProvider) {
     $stateProvider
         .state('index', {
             url: '/tabs',
@@ -34,16 +34,18 @@ angular.module('starter').config(function($stateProvider,
         url: '/home',
         views: {
             "home-view": {
-                templateUrl: 'templates/home.html'
+                templateUrl: 'templates/home.html',
+                controller:'HomeCtrl'
             }
         }
     })
 
     $stateProvider.state('index.list', {
-        url: '/list',
+        url: '/list/?search',
         views: {
             "list-view": {
-                templateUrl: 'templates/list.html'
+                templateUrl: 'templates/list.html',
+                controller:'ListCtrl'
             }
         }
     })
