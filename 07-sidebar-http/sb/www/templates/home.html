@@ -1,0 +1,36 @@
+<ion-view view-title="Your Title!">
+    <ion-content has-subheader="false">
+        <div class="list">
+            <div class="item item-input-inset">
+                <label class="item-input-wrapper">
+                    
+                    <input type="text" 
+                    			 placeholder="Email"
+                    			 ng-model="data.parametroDeBusqueda">
+                </label>
+                
+                <button class="button button-small" 
+                		    ng-click="buscar()">
+
+                    Submit
+                </button>
+            </div>
+
+						<!-- Con link -->
+            <!-- <a class="item item-thumbnail-left" 
+               ng-repeat="articulo in data.resultadosDelServer"
+               href="{{articulo.permalink}}"
+               > -->
+            <a class="item item-thumbnail-left" 
+               ng-repeat="articulo in data.resultadosDelServer"
+               >
+                <img src="{{articulo.thumbnail}}">
+                <h2>{{articulo.title}}</h2>
+                <p>
+                	<button ng-click="guardar(articulo)">Guardar en favoritos</button>
+                </p>
+            </a>
+            
+        </div>
+    </ion-content>
+</ion-view>
